@@ -405,3 +405,14 @@
 &xphy {
 	status = "okay";
 };
+
+&fan {
+	pwms = <&pwm 0 50000 0>;
+	status = "okay";
+};
+
+&pwm {
+	pinctrl-names = "default";
+	pinctrl-0 = <&pwm_pins>;
+	status = "okay";
+};
